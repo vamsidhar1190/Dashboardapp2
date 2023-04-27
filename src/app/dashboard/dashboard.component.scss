@@ -24,7 +24,18 @@
 p{
     margin-bottom: 0px;
 }
-.custom-tags .p-tag{
-    background-color: red;
-}
+
+#usa-map {
+    padding: 2em;
+  }
+  
+  .state {
+    
+    fill: #00b2ff;
+  }
+  
+  .state:hover {
+    fill: #3385ff;
+    transition: fill 0.15s ease;
+  }
 

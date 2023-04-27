@@ -38,6 +38,8 @@ export class DashboardComponent implements OnInit {
     cities!: City[];
 
     selectedCity!: City;
+    date!: Date[];
+
 
 
     ngOnInit() {

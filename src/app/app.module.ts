@@ -25,6 +25,9 @@ import { NgApexchartsModule } from "ng-apexcharts";
 import { ProgressBarModule } from 'primeng/progressbar';
 import { DividerModule } from 'primeng/divider';
 import { DropdownModule } from 'primeng/dropdown';
+import { CalendarModule } from 'primeng/calendar';
+
+
 
    
 
@@ -61,7 +64,9 @@ import { DropdownModule } from 'primeng/dropdown';
     NgApexchartsModule,
     ProgressBarModule,
     DividerModule,
-    DropdownModule
+    DropdownModule,
+    CalendarModule,
+    
     
     
   ],
