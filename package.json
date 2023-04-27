@@ -21,6 +21,8 @@
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.4",
     "chart.js": "^4.2.1",
+    "ng-apexcharts": "^1.7.5",
+    "ngx-apexcharts": "^0.1.1",
     "primeflex": "^3.3.0",
     "primeicons": "^6.0.1",
     "primeng": "^15.4.1",

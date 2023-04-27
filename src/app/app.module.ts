@@ -21,6 +21,18 @@ import { TagModule } from 'primeng/tag';
 import { InputTextModule } from 'primeng/inputtext';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ToggleButtonModule } from 'primeng/togglebutton';
+import { NgApexchartsModule } from "ng-apexcharts";
+import { ProgressBarModule } from 'primeng/progressbar';
+import { DividerModule } from 'primeng/divider';
+import { DropdownModule } from 'primeng/dropdown';
+
+   
+
+
+ 
+
+
+
 
 
 
@@ -45,7 +57,13 @@ import { ToggleButtonModule } from 'primeng/togglebutton';
     TagModule,
     BadgeModule,
     ToggleButtonModule,
-    ChartModule
+    ChartModule,
+    NgApexchartsModule,
+    ProgressBarModule,
+    DividerModule,
+    DropdownModule
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

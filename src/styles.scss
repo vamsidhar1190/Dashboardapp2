@@ -35,3 +35,34 @@
   .customTabs .p-tabview-panels{
     border-top: 1px solid #dee2e6;
   }
+
+  .p-progressbar{
+    height: 10px;
+    color: green;
+  }
+  .p-progressbar-label{
+    font-size: 0px;
+  }
+  .p-dropdown .p-dropdown-label{
+    background-color: #e4fffa;
+    color: #0fc171;
+    padding-top: 1px;
+  }
+  .p-dropdown .p-dropdown-trigger{
+    background-color: #e4fffa;
+    color: #0fc171;
+ }
+ .p-dropdown{
+  height: 30px;
+ }
+ .p-tag.p-tag-success{
+  background-color: #d1eee7;
+  color: #7bca9e;
+}
+
+.custom-tags .p-tag{
+  background-color: #f16060;
+}
+
+
+
