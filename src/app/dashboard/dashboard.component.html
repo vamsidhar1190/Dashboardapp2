@@ -2,10 +2,10 @@
     <div class="d-flex justify-content-between p-4 ">
         <div>
             <h2 class="font-bold" style="color: white;">Dashboard</h2>
-            <p class="font-medium" style="color: white;">Salessa > Dashboard > Sales</p>
+            <p class="font-medium" style="color: white;">Ahex > Dashboard > Sales</p>
         </div>
         <div class="mt-3">
-            <p-toggleButton onLabel="Report" offLabel="create Report" [style]="{ width: '10em' }"></p-toggleButton>
+            <p-toggleButton onLabel="Report" offLabel="Create Report" [style]="{ width: '10em' }"></p-toggleButton>
         </div>
     </div>
 </div>
@@ -14,7 +14,7 @@
     <div class="" style="width: 65%;">
 
         <div class="card  ms-4">
-            <h4 class="m-3 text-700">Revenue</h4>
+            <h4 class="m-3 text-700 font-bold" style="font-size: 17px">Revenue</h4>
             <p-chart type="bar" [data]="data" [options]="options"></p-chart>
 
         </div>
@@ -22,7 +22,7 @@
             <div class="card ms-4 ">
                 <div class="d-flex justify-content-around  p-3 ">
                     <div class="me-5">
-                        <h5 class="font-bold text-700">Download your earnings report</h5>
+                        <h5 class="font-bold text-700" style="font-size: 17px;">Download your earnings report</h5>
                         <p class="font-normal text-500 " style="font-size: 13px;">There are many variations of passages
                         </p>
                     </div>
@@ -37,10 +37,10 @@
 
 
     <div class="card flex justify-content-center text-center" style="width: 34%;">
-        <h6 class="font-semibold m-3 text-600">Total Sales Unit</h6>
+        <h6 class="font-semibold m-3 text-600" style="font-size: 17px">Total Sales Unit</h6>
         <p-chart type="polarArea" [data]="data1" [options]="options1" class="ms-4"></p-chart>
 
-        <div class=" card surface-800 " style="margin-top: 20%;">
+        <div class=" card surface-800 " style="margin-top: 10%;">
             <div class="slaes_unit_footer d-flex justify-content-between m-3 gap-3">
                 <div class="single_sales">
                     <p>This Month Revenue</p>
@@ -65,7 +65,7 @@
     </div>
 </div>
 
-<div class="d-flex gap-3    ">
+<div class="d-flex gap-3  ms-4">
     <div class="card " style="width: 33%;">
         <div id="chart" class="mt-4">
             <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [xaxis]="chartOptions.xaxis"
@@ -76,8 +76,9 @@
 
 
     <div class="card" style="width: 30%;">
-        <div class="progress m-3 mt-5">
-            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25"
+      
+        <div class="progress m-3 mt-5"> 
+          <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25"
                 aria-valuemin="0" aria-valuemax="100"></div>
         </div>
         <div class="progress m-3 mt-5 ">
@@ -89,17 +90,17 @@
                 aria-valuemin="0" aria-valuemax="100"></div>
         </div>
     </div>
-    <div class="card" style="width: 35%; padding-right: 3%;">
-        <h4 class="m-3 font-italic font-bold text-teal-500" style="font-size: 50px;">356</h4>
+    <div class="card" style="width: 35%;">
+        <h4 class="m-3 font-italic font-bold text-teal-500" style="font-size: 50px;">$  356</h4>
         <p-chart type="bar" [data]="data2" [options]="options2" height="180px"></p-chart>
 
     </div>
 </div>
-<div class="d-flex">
+<div class="d-flex gap-3 ms-4">
 
-<div class="card ms-4 mt-3" style="width: 33%;">
+<div class="card  mt-3" style="width: 33%;">
     <div class="d-flex justify-content-between m-2 mt-3">
-        <h5 class="font-bold">Transaction</h5>
+        <h5 class="font-bold" style="font-size: 17px;">Transaction</h5>
         <i class='bx bx-dots-horizontal mt-1 me-2'></i>
     </div>
     <div class="d-flex " style="border-bottom: 1px solid rgba(0, 0, 0, 0.05); margin: 15px;">
@@ -107,7 +108,7 @@
             <img src="../../assets/112.png" alt="" width="40px">
         </div>
         <div class="p-2 ">
-            <h6 class="font-semibold">Electriciy Bill</h6>
+            <h6 class="font-semibold" style="font-size: 17px;">Electriciy Bill</h6>
             <h6 style="font-size: 11px;font-weight: bold; color: #8890b5;">10 Aug 03:00PM</h6>
         </div>
         <div class=" mt-2 ml-auto p-2">
@@ -120,7 +121,7 @@
             <img src="../../assets/112.png" alt="" width="40px">
         </div>
         <div class="p-2">
-            <h6 class="font-semibold">Electriciy Bill</h6>
+            <h6 class="font-semibold" style="font-size: 17px;">Electriciy Bill</h6>
             <h6  style=" font-size:11px; font-weight: bold;color: #8890b5;">10 Aug 03:00PM</h6>
         </div>
         <div class=" mt-2 ml-auto p-2">
@@ -132,7 +133,7 @@
             <img src="../../assets/112.png" alt="" width="40px">
         </div>
         <div class="p-2">
-            <h6 class="font-semibold">Electriciy Bill</h6>
+            <h6 class="font-semibold" style="font-size: 17px;">Electriciy Bill</h6>
             <h6 style="font-size: 11px;font-weight: bold;color: #8890b5;">10 Aug 03:00PM</h6>
         </div>
         <div class="mt-2 ml-auto p-2">
@@ -144,7 +145,7 @@
             <img src="../../assets/112.png" alt="" width="40px">
         </div>
         <div class="p-2 ">
-            <h6 class="font-semibold">Electriciy Bill</h6>
+            <h6 class="font-semibold" style="font-size: 17px;">Electriciy Bill</h6>
             <h6 style="font-size: 11px;font-weight: bold;color: #8890b5;">10 Aug 03:00PM</h6>
         </div>
         <div class="mt-2 ml-auto p-2">
@@ -159,9 +160,9 @@
 
 
 
-<div class="card ms-4 mt-3" style="width: 30%;">
+<div class="card  mt-3" style="width: 30%;">
     <div class="d-flex justify-content-between" style="border-bottom: 1px solid rgba(0, 0, 0, 0.05); margin: 15px;">
-        <h6 class="font-semibold mt-2 ms-2">News & Upadate</h6>
+        <h6 class="font-semibold mt-1 ms-2" style="font-size: 17px;">News & Upadate</h6>
         <p-dropdown [options]="cities" [(ngModel)]="selectedCity" optionLabel="name" class="me-2"></p-dropdown>
     </div>
     <div style="border-bottom: 1px solid rgba(0, 0, 0, 0.05); margin: 15px;">
@@ -184,29 +185,32 @@
 </div>
 
 
-<div class="card ms-4 mt-3" style="width: 35%;">
+<div class="card mt-3" style="width: 35%;">
     <div class="d-flex justify-content-between m-2 mt-3">
-        <h5 class="font-bold">Transaction</h5>
+        <h5 class="font-bold" style="font-size: 17px;">Transaction</h5>
         <i class='bx bx-dots-horizontal mt-1 me-2'></i>
     </div>
     <div class="d-flex justify-content-between ms-3 me-3 mt-3">
-        <h6 class="font-semibold mt-2">Monthly Plan</h6>
+        <h6 class="font-semibold mt-2" style="font-size: 17px;">Monthly Plan</h6>
         <p class="font-semibold" style="color: #8890b5; font-size: 23px;">$25</p>
     </div>
     <div class="d-flex justify-content-between ms-3 me-3 mt-3">
-        <h6 class="font-semibold mt-2">Taxes</h6>
+        <h6 class="font-semibold mt-2" style="font-size: 17px;">Taxes</h6>
         <p class="font-semibold" style="color: #8890b5; font-size: 23px;">$25</p>
     </div>
     <div class="d-flex justify-content-between ms-3 me-3 mt-3">
-        <h6 class="font-semibold mt-2">Extra</h6>
+        <h6 class="font-semibold mt-2" style="font-size: 17px;">Extra</h6>
         <p class="font-semibold" style="color: #8890b5; font-size: 23px;">$25</p>
     </div>
-    <p class="font-semibold ms-3 mt-2" style="color: #8890b5; font-size:13px;">Netflix and other bills in this month. </p>
+    <p class="font-semibold ms-3 mt-4" style="color: #8890b5; font-size:13px;">Netflix and other bills in this month. </p>
     <div class="d-flex m-4 justify-content-around p-2 " style="background-color: #f8faff;">
-        <div>
+        <div >
             <span class="font-semibold" style="color: #8890b5; font-size: 15px;">Total balance </span>
-            <p style="font-size: 35px;color: #4be69d;" class="font-italic">$3650</p>
+            <p style="font-size: 35px;color: #4be69d;" class="font-italic mt-2">$3650</p>
+            <div class="mt-3">
             <p-tag severity="success" value="+1235"></p-tag>
+
+            </div>
         </div>
         <div class="mt-4">           
             <p> <p-tag severity="color:bg-info" value="Today" class="custom-tags"></p-tag></p>
@@ -218,13 +222,13 @@
 </div>
 </div>
 
-<div class="d-flex ms-4 mt-3" >
-<div class="card flex justify-content-center" style="width: 32%;">
+<div class="d-flex ms-4 mt-3 gap-3" >
+<div class="card flex justify-content-center" style="width: 33%;">
     <p-calendar class="max-w-full" [(ngModel)]="date" [inline]="true" [showWeek]="true"></p-calendar>
 </div>
 
 
-<div class="card ms-4" style="width:66%;">
+<div class="card" style="width:66%;">
 <div id="usa-map">
     <div class="svg-container">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="usa"
@@ -336,6 +340,118 @@
   </div>
   </div>
 </div>
+
+
+<div class="d-flex table-wrapper ms-4 mt-3 gap-3" >
+  <div class="card parent-container">
+    <p-treeTable [value]="files1" [columns]="cols" [paginator]="true" [rows]="10" [scrollable]="false"  class="monthly-Invoice">
+        <ng-template pTemplate="header" let-columns>
+            <tr>
+                <th *ngFor="let col of columns">
+                    {{ col.header }}
+                </th>
+            </tr>
+        </ng-template>
+        <!-- <ng-template pTemplate="body" let-toggleData let-rowData="rowData" let-columns="columns">
+          <tr>
+              <td *ngFor="let col of columns; let i = index" class="vam">
+              
+                  <p-treeTableToggler [rowNode]="toggleData" *ngIf="i === 0"></p-treeTableToggler>
+                  <img *ngIf="col.field == 'image'" [src]="rowData[col.field]" style="width: 35px; height: 35px; border-radius: 50%;">
+                  <span *ngIf="col.field !== 'image'" >{{ rowData[col.field] }}</span>
+              </td>
+          </tr>
+      </ng-template> -->
+      <ng-template pTemplate="body" let-toggleData let-rowData="rowData" let-columns="columns">
+        <tr>
+          <td *ngFor="let col of columns; let i = index" class="vam">
+            <ng-container *ngIf="col.field == 'image'">
+              <p-treeTableToggler [rowNode]="toggleData" styleClass="ui-treetable-toggler-noop" *ngIf="i === 0"></p-treeTableToggler>
+
+              <img [src]="rowData[col.field]" style="width: 35px; height: 35px; border-radius: 50%;">
+            </ng-container>
+            <ng-container *ngIf="col.field !== 'image'">
+              <span>{{ rowData[col.field] }}</span>
+            </ng-container>
+          </td>
+        </tr>
+      </ng-template>
+      
+        <ng-template pTemplate="paginatorleft">
+            <p-button icon="pi pi-refresh" styleClass="p-button-text"></p-button>
+        </ng-template>
+        <ng-template pTemplate="paginatorright">
+            <p-button icon="pi pi-download" styleClass="p-button-text"></p-button>
+        </ng-template>
+    </p-treeTable>
+  </div> 
+  <div class="card parent3-container">
+    <p-treeTable [value]="files2" [columns]="tabledata1" [paginator]="true" [rows]="10" [scrollable]="false" class="monthly-Invoice">
+        <ng-template pTemplate="header" let-columns>
+            <tr>
+                <th *ngFor="let col of columns">
+                    {{ col.header }}
+                </th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-rowNode let-rowData="rowData" let-columns="columns">
+            <tr>
+                <td *ngFor="let col of columns; let i = index" >
+                
+                    <!-- <p-treeTableToggler [rowNode]="rowNode" *ngIf="i === 0"></p-treeTableToggler> -->
+                    <img *ngIf="col.field === 'image'" [src]="rowData[col.field]" style="width: 35px; height: 35px; border-radius: 50%; margin-left: 35%;">
+                    <span *ngIf="col.field !== 'image'">{{ rowData[col.field] }}</span>
+                </td>
+            </tr>
+        </ng-template>
+       
+    </p-treeTable>
+  </div> 
+</div>
+<div class="d-flex ms-4 mt-3 gap-3">
+<div class="card parent4-container">
+  <p-treeTable [value]="files3" [columns]="tabledata1" [paginator]="true" [rows]="10" [scrollable]="false" class="monthly-Invoice">
+      <ng-template pTemplate="header" let-columns>
+          <tr>
+              <th *ngFor="let col of columns">
+                  {{ col.header }}
+              </th>
+          </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-rowNode let-rowData="rowData" let-columns="columns">
+          <tr>
+              <td *ngFor="let col of columns; let i = index" >
+              
+                  <!-- <p-treeTableToggler [rowNode]="rowNode" *ngIf="i === 0"></p-treeTableToggler> -->
+                  <img *ngIf="col.field === 'image'" [src]="rowData[col.field]" style="width: 50px; height: 50px; border-radius: 50%; margin-left: 35%;">
+                  <span *ngIf="col.field !== 'image'">{{ rowData[col.field] }}</span>
+              </td>
+          </tr>
+      </ng-template>  
+  </p-treeTable>
+  <Button class="btn btn-primary w-25 ms-4 mt-3" >click</Button> 
+
+</div> 
+
+
+<div class="card flex justify-content-center" style="width: 30%;">
+  <div class="d-flex justify-content-evenly mb-3 mt-3">
+  <h6 class="font-semibold mt-1 m-2" style="font-size: 17px;">Market Values</h6>
+  <p-dropdown [options]="Years" [(ngModel)]="selectedYears" optionLabel="name" class="me-2"></p-dropdown>
+</div>
+ <p-chart type="radar" [data]="data3" [options]="options3"></p-chart>
+</div>
+</div>
+
+<div class="footer mt-3">
+  <p>
+    2023 © Influence - Designed by  Ahex Techologies
+  
+  </p>
+
+</div>
+
+
 
 
 

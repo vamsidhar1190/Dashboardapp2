@@ -36,13 +36,8 @@
     border-top: 1px solid #dee2e6;
   }
 
-  .p-progressbar{
-    height: 10px;
-    color: green;
-  }
-  .p-progressbar-label{
-    font-size: 0px;
-  }
+
+
   .p-dropdown .p-dropdown-label{
     background-color: #e4fffa;
     color: #0fc171;
@@ -66,7 +61,6 @@
 
 
 
-
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
@@ -76,9 +70,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .p-datepicker {
    border: none !important;
 }
+
 .p-datepicker table td.p-datepicker-today > span {
   background-color: #64c5b1;
+  border-radius: 19px;
+
 }
+
 
 .p-datepicker table td > span {
   height: 3rem;
@@ -86,4 +84,46 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .max-w-full{
   text-align: center;
 }
+// .p-treetable-scrollable-body>table>.p-treetable-tbody>tr:first-child>td{
+//   width: 124px;
+// }
+.p-treetable .p-treetable-tbody > tr > td {
+  padding: 5px 5px;
+}
+
+
+.p-treetable-thead{
+  background-color: blue;
+}
+
+.p-treetable .p-treetable-thead > tr > th {
+  background-color: #f8faff;
+  color: #64c5b1;
+}
+.testImage{
+  display: none;
+}
+
+.monthly-Invoice tbody tr td:nth-child(2) {
+  color: #bda5f8!important;
+}
+.monthly-Invoice tbody tr td:nth-child(3) {
+  color: #ff7f57!important;
+}
+
+.monthly-Invoice tbody tr td:nth-child(4) {
+  color: #64c5b1!important;
+}
+.monthly-Invoice tbody tr td:nth-child(5) {
+  color: #6fa5ec!important;
+}
+
+
+
+
+
+
+
+
+
 

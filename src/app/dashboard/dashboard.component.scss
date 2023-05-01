@@ -1,41 +1,80 @@
-.chart{
-    transform: translateY(-20px);
+.chart {
+  transform: translateY(-20px);
 }
-.single_sales p{
-    font-size: 10px;
-    color: whitesmoke;
+
+.single_sales p {
+  font-size: 10px;
+  color: whitesmoke;
 
 }
-.single_sales h3{
-    font-weight: bold;
-    font-size: 20px;
-    color: whitesmoke;
+
+.single_sales h3 {
+  font-weight: bold;
+  font-size: 20px;
+  color: whitesmoke;
 }
-.single_sales  span{
-    color: aqua;
-    font-size: 15px;
+
+.single_sales span {
+  color: aqua;
+  font-size: 15px;
 }
-.single_sales i{
-    color: aqua;
+
+.single_sales i {
+  color: aqua;
 }
-.graph{
-    transform: translateY(-34px);
+
+.graph {
+  transform: translateY(-34px);
 }
-p{
-    margin-bottom: 0px;
+
+p {
+  margin-bottom: 0px;
 }
 
 #usa-map {
-    padding: 2em;
-  }
-  
-  .state {
-    
-    fill: #00b2ff;
-  }
-  
-  .state:hover {
-    fill: #3385ff;
-    transition: fill 0.15s ease;
-  }
+  padding: 2em;
+}
 
+.state {
+
+  fill: #00b2ff;
+}
+
+.state:hover {
+  fill: #3385ff;
+  transition: fill 0.15s ease;
+}
+
+.parent-container {
+  width: 50%;
+}
+
+
+.monthly-Invoice tr td,
+.monthly-Invoice tr th {
+  font-size: 14px;
+}
+
+.parent2-container {
+  width: 50%;
+}
+
+.parent3-container {
+  width: 50%;
+}
+
+.parent4-container {
+  width: 70%;
+}
+.footer{
+  background-color: #4be69d;
+  justify-content: center;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 25px 25px;
+}
+.table-wrapper{
+  z-index: 100;
+  position: relative;
+}
