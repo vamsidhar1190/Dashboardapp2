@@ -18,9 +18,7 @@
   transition: 0.5s ease;
 }
 
-.label-hamburger-menu:hover .bar {
-  /* box-shadow: 1px 1px 7px 1px RGBa(0, 0, 0, 0.3); */
-}
+
 
 .label-hamburger-menu .bar {
   width: 30px;
@@ -65,8 +63,8 @@
   position: relative;
 
   height: 100vh;
-  left: 260px;
-  width: calc(100% - 260px);
+  left: 200px;
+  width: calc(100% - 200px);
   transition: all 0.5s ease;
   display: flex;
   flex-direction: column;
@@ -77,7 +75,6 @@
   height: 60px;
   display: flex;
   align-items: center;
-  // justify-content: space-between;
 
   background-color:white;
 }
@@ -98,7 +95,7 @@
 .home-section .home-header .title {
   color: grey;
   font-size: 35px;
-  gap: 13%;
+  
 }
 
 
@@ -117,7 +114,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 260px;
+  width: 200px;
   background: white;
   z-index: 100;
   transition: all 0.5s ease;
@@ -148,11 +145,10 @@
 
 .sidebar .nav-links {
   height: 100%;
-  width: 260px;
+  width: 200px;
   padding-bottom: 200px;
   overflow: auto;
-  // margin-top: px;
-}
+  }
 
 .sidebar .nav-links::-webkit-scrollbar {
   display: none;
@@ -168,20 +164,15 @@
 }
 
 .sidebar .nav-links li:hover {
-  // background: #ffa726;
-  // background: #0d6efd;
+ 
   border-radius: 5px ;
   cursor: pointer;
   
 }
 
-.sidebar .nav-links li.active {
-  // background-image: linear-gradient(to right, #ffa726, #ff5722);
-}
-
 /* Dropdown Title */
 .sidebar .nav-links .dropdown-title {
-  width: 260px;
+  width: 200px;
   overflow: hidden;
   transition: all 0.52s ease;
   /* */
@@ -195,13 +186,7 @@
   width: 60px;
 }
 
-/* Dropdown Button */
-// .sidebar .nav-links .dropdown-btn {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     position: relative;
-// }
+
 
 .sidebar .nav-links li i {
   height: 50px;
@@ -214,10 +199,7 @@
   transition: all 0.3s ease;
 }
 
-// .sidebar .nav-links li:hover i, 
-// .sidebar .nav-links li.active i {
-//   color: white;
-// }
+
 
 .sidebar .nav-links li.showMenu i.arrow {
   transform: rotate(-180deg);
@@ -243,10 +225,7 @@
 .sidebar .nav-links li.active a .link_name {
   color: #4be69d;
 }
-// .sidebar .nav-links li:hover a .icons, 
-// .sidebar .nav-links li.active a .icons {
-//   color: white;
-// }
+
 
 
 
@@ -257,7 +236,6 @@
 /* Sub Menu */
 .sidebar .nav-links li .sub-menu {
   padding: 6px 6px 14px 70px;
-  /* margin-top: -10px; */
   background: white;
   display: none;
   transition: all 0.4s ease;
@@ -306,15 +284,6 @@
   padding: 6px 15px;
   width: 200px;
 }
-// .hamburger-menu{
-//   display: none;
-// }
-
-// @media only screen and (max-width: 990px) {
-//   .hamburger-menu{
-//     display: block;
-//   }
-// }
 
 .sidebar.sidebar-close .nav-links li:hover .sub-menu {
   top: 0;

@@ -329,7 +329,6 @@ export class DashboardComponent implements OnInit {
                 ]
             };
             this.files1.push(node);
-            console.log("node",node);
             
         }
 
