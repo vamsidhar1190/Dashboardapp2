@@ -1,6 +1,6 @@
 <div class="sidebar" [class.sidebar-close]="!openSidebar">
   <div class="logo-details">
-    <div class="d-flex ">
+    <div class="d-flex sidebar-block">
       <img src="./assets/11.jpg" width="50px">
       <h4 class="mt-3 text-4xl text-cyan-600 ms-3"> S A</h4>
     </div>
@@ -30,39 +30,35 @@
 </li>
 </ul>
 </div>
-<section class="home-section  mt-3" style="height: 100%;">
-  <div class="home-header ">
-    <div class="hamburger-menu">
-      <input type="checkbox" id="checkbox-hamburger-menu" [(ngModel)]="openSidebar" />
-      <label class="label-hamburger-menu" for="checkbox-hamburger-menu">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </label>
-    </div>
-    <div class="title  d-flex col-10">
-      <div class="d-flex col-8">
-        <!-- <div class="p-2 flex-grow-1 bd-highlight">Contacts</div> -->
-        <!-- <h2><input type="text" class="pi pi-search text-1xl"></h2> -->
+<section class="home-section home-section-wrapper mt-3" style="height: 100%;">
+  <div class="home-header-wrapper ">
+   
+    <div class="title home-header-content  d-flex ">
+        <div class="hamburger-menu">
+          <input type="checkbox" id="checkbox-hamburger-menu" [(ngModel)]="openSidebar" />
+          <label class="label-hamburger-menu" for="checkbox-hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </label>
+        </div>
+   
         <div class="form-group has-search">
           <span class="fa fa-search form-control-feedback"></span>
           <input type="text" class="form-control  vamsi" placeholder="Search">
         </div>   
 
       </div>
-      <div class="col-1">
+      <div class="image-icon-wrapper-block">
         <div class=" bd-highlight  me-3 mb gap-3 d-flex m-1">
-          <!-- <div class="p-1 bd-highlight icon text-color"><i class="pi pi-search text-1xl"></i></div> -->
           <div class="p-1 bd-highlight icon text-color"> <i class="pi pi-comments text-1xl" pBadge value="5"
               severity="success"></i> </div>
               <div class="p-1 bd-highlight icon text-color"> <i class="pi pi-bell text-1xl" pBadge value="4" severity="danger"></i></div>
 
-              <div><img src="./assets/111.jpg" alt="" class="profile-imgs ms-3"></div>
-          <!-- <div class="p-1 bd-highlight icon text-color"> <i class="pi pi-arrows-alt text-1xl"></i> </div> -->
-          <!-- <div class="p-1 bd-highlight icon text-color"> <i class="pi pi-inbox  text-1xl"></i> </div> -->
+              <div class="img-content"><img src="./assets/111.jpg" alt="" class="profile-imgs "></div>
         </div>
       </div>
-    </div>
+   
   </div>
  
   <div class="surface-ground">

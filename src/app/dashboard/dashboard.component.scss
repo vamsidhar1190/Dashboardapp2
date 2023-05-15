@@ -78,3 +78,227 @@ p {
   z-index: 100;
   position: relative;
 }
+
+
+// tab responsive starts here
+
+@media only screen and (min-width:767px) and (max-width:1028px){
+
+  .dashboard-wrapper{
+    padding:3rem 1.5rem !important;
+    justify-content: space-between !important;
+  }
+  .dashboard-wrapper h2{
+    font-size: 25px !important;
+  }
+  .dashboard-wrapper p{
+    font-size: 19px;
+  }
+  .transaction-title-wrapper h5{
+    font-size: 19px !important;
+    padding-left: 0.5rem;
+  }
+  .transaction-title{
+    font-size: 19px !important;
+  }
+  .all-chart-blocks-first{
+    padding: 10px;
+  }
+  .dashboard-wrapper-main{
+    margin-bottom: 20px;
+    margin-top: 10px;
+  
+  }
+  .bar-charts-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  .card-second-content-wrapper{
+    align-items: center;
+    padding: 3rem 1.5rem !important ;
+  }
+  .bar-charts-wrapper-first{
+    width: 100% !important;
+  }
+  .bar-charts-wrapper-first .card{
+    margin: 0px !important;
+  
+  }
+  .card-second-content{
+    margin: 0px !important;
+  }
+  .bar-charts-wrapper-second{
+    width: 100% !important;
+  }
+  .chart {
+    transform: translateY(0px);
+  }
+  .card-second-button{
+    padding: 0px !important;
+  }
+  .bar-charts-wrapper-second-wrapper {
+    .bar-charts-wrapper-second-wrapper-content{
+      margin-left: 0px !important;
+    }
+    .single_sales p {
+      font-size: 19px;
+  }
+  
+  
+  }
+  .threechart-wrapper{
+    margin-left: 0px !important;
+    flex-direction: column;
+    margin: 20px 0px ;
+  }
+  .all-chart-blocks{
+    width: 100% !important ;
+  }
+  .table-wrapper{
+    flex-direction: column;
+    margin-left: 0px !important;
+  
+  
+  }
+  .marketing-wrapper{
+    margin-left: 0px !important;
+  
+    flex-direction: column;
+  
+  }
+  .thirdtable-clickbuttton{
+    width: 100% !important;
+    margin-left: 0px !important;
+  
+  }
+  .footer {
+    padding: 25px 25px;
+  }
+  .footer p{
+    font-size: 20px !important;
+  }
+  .all-chart-blocks-img img{
+    width: 35px !important;
+    height: 35px !important;
+  
+  }
+  .transaction-title{
+    margin-left: 0.5rem;
+  }
+  .main-surface-ground-wrapper {
+    padding: 10px;
+  }
+ 
+
+}
+// tab responsive ends here
+
+
+// mobile responsive starts here
+@media only screen and (max-width:767px){
+.dashboard-wrapper{
+  padding:1.5rem 0.5rem !important;
+  justify-content: space-between !important;
+}
+.dashboard-wrapper-main{
+  margin-bottom: 20px;
+  margin-top: 10px;
+
+}
+.dashboard-wrapper .dashboard-wrapper-pre{
+  width: 60%;
+}
+
+.bar-charts-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.card-second-content-wrapper{
+  align-items: center;
+}
+.bar-charts-wrapper-first{
+  width: 100% !important;
+}
+.bar-charts-wrapper-first .card{
+  margin: 0px !important;
+
+}
+.card-second-content{
+  margin: 0px !important;
+}
+.bar-charts-wrapper-second{
+  width: 100% !important;
+}
+.chart {
+  transform: translateY(0px);
+}
+.card-second-button{
+  padding: 0px !important;
+}
+.bar-charts-wrapper-second-wrapper {
+  .bar-charts-wrapper-second-wrapper-content{
+    margin-left: 0px !important;
+  }
+  .single_sales p {
+    font-size: 13px;
+}
+
+
+}
+.threechart-wrapper{
+  margin-left: 0px !important;
+  flex-direction: column;
+  margin: 20px 0px ;
+}
+.all-chart-blocks{
+  width: 100% !important ;
+}
+.all-chart-load-more{
+  padding-bottom: 10px;
+
+}
+.table-wrapper{
+  flex-direction: column;
+  margin-left: 0px !important;
+
+
+}
+.marketing-wrapper{
+  margin-left: 0px !important;
+
+  flex-direction: column;
+
+}
+.thirdtable-clickbuttton{
+  width: 100% !important;
+  margin-left: 0px !important;
+
+}
+.footer {
+  padding: 15px 25px;
+}
+.all-chart-blocks-img img{
+  margin-left: 0px !important;
+
+}
+.transaction-title{
+  margin-left: 0.5rem;
+}
+.main-surface-ground-wrapper {
+  padding: 10px;
+}
+.main-heading-card-title{
+  font-size: 25px !important;
+}
+.transaction-title-wrapper h5{
+  font-size: 18px !important;
+  padding-left: 1rem;
+}
+.all-chart-blocks-img img{
+  width: 35px !important;
+  height: 35px !important;
+}
+
+}
+// mobile responsive ends here
+
