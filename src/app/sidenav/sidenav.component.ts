@@ -1,10 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
 
-
-
-
-
 @Component({
   selector: 'app-sidenav',
   templateUrl: './sidenav.component.html',
@@ -12,18 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidenavComponent implements OnInit{
 
-ngOnInit(): void {
-  
-}
-
-
-isSearchBarOpen = false;
-showSearchInput= true
-
-
-openSidebar: boolean = true;
-
-menuSidebar = [
+public isSearchBarOpen:boolean = false;
+public showSearchInput:boolean= true
+public openSidebar: boolean = true;
+public menuSidebar = [
   {
     link_name: "Dashboard",
     link: "/dashboard",
@@ -100,13 +88,18 @@ menuSidebar = [
 ]
 
 
-showSubmenu(itemEl: HTMLElement) {
+ngOnInit(): void {
+  
+}
+
+
+public showSubmenu(itemEl: HTMLElement):void {
   itemEl.classList.toggle("showMenu");
 }
 
-isExpanded = false;
+public isExpanded:boolean = false;
 
-toggleSidebar() {
+public toggleSidebar() {
   this.isExpanded = !this.isExpanded;
 }
 

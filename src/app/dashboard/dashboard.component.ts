@@ -34,52 +34,33 @@ export class DashboardComponent implements OnInit {
     public chartType!: ChartType;
     public chartOptions: ChartOptions;
 
-    data: any;
-    options: any;
-    data1: any;
-    options1: any;
-    data2: any
-    options2: any;
+    public data: any;
+    public options: any;
+    public data1: any;
+    public options1: any;
+    public data2: any
+    public options2: any;
+    public data3: any;
+    public options3: any;
 
-    data3: any;
+    public cities!: City[];
 
-    options3: any;
-
-    cities!: City[];
-
-    selectedCity!: City;
+    public selectedCity!: City;
     
-    Years!: Year[];
+    public Years!: Year[];
 
-    selectedYears!: City;
+    public selectedYears!: City;
 
     public hideToggleImage: boolean = true;
+    public date!: Date[];
+    public files1!: TreeNode[];
+    public files2!: TreeNode[];
+    public files3!: TreeNode[];
 
+    public cols!: any[];
+    public tabledata!: any[];
+    public tabledata1!: any[];
 
-
-    date!: Date[];
-    files1!: TreeNode[];
-    files2!: TreeNode[];
-    files3!: TreeNode[];
-
-    cols!: any[];
-    tabledata!: any[];
-    tabledata1!: any[];
-
-
-
-    ngOnInit() {
-        this.charts();
-        this.polar();
-        this.chartss();
-        this.Days();
-        this.TableFormat()
-        this.Table2Format()
-        this.Table3Format()
-        this.RadarChart()
-        this.months( )
-
-    }
     constructor() {
         this.chartOptions = {
             series: [
@@ -90,6 +71,7 @@ export class DashboardComponent implements OnInit {
             ],
             chart: {
                 height: 210,
+                width:'100%',
                 type: "line",
                 zoom: {
                     enabled: false
@@ -127,10 +109,21 @@ export class DashboardComponent implements OnInit {
         };
     }
 
+    ngOnInit() {
+        this.charts();
+        this.polar();
+        this.chartss();
+        this.Days();
+        this.TableFormat()
+        this.Table2Format()
+        this.Table3Format()
+        this.RadarChart()
+        this.months( )
 
+    }
+   
 
-
-    charts() {
+    public charts():void {
         const documentStyle = getComputedStyle(document.documentElement);
         const textColor = documentStyle.getPropertyValue('--text-color');
         const textColorSecondary = documentStyle.getPropertyValue('--text-color-secondary');
@@ -192,7 +185,7 @@ export class DashboardComponent implements OnInit {
     }
 
 
-    polar() {
+    public polar():void {
         const documentStyle = getComputedStyle(document.documentElement);
         const textColor = documentStyle.getPropertyValue('--text-color');
         const surfaceBorder = documentStyle.getPropertyValue('--surface-border');
@@ -215,6 +208,8 @@ export class DashboardComponent implements OnInit {
         };
 
         this.options1 = {
+            responsive: false,
+            maintainAspectRatio: false,
             plugins: {
                 legend: {
                     labels: {
@@ -232,7 +227,7 @@ export class DashboardComponent implements OnInit {
         };
     }
 
-    chartss() {
+    public chartss():void{
         const documentStyle = getComputedStyle(document.documentElement);
         const textColor = documentStyle.getPropertyValue('--text-color');
         const textColorSecondary = documentStyle.getPropertyValue('--text-color-secondary');
@@ -289,7 +284,7 @@ export class DashboardComponent implements OnInit {
     }
 
 
-    Days() {
+   public  Days():void {
         this.cities = [
             { name: 'Today', code: 'TD' },
             { name: 'Tomorrow', code: 'TW' },
@@ -299,7 +294,7 @@ export class DashboardComponent implements OnInit {
     }
 
 
-    TableFormat() {
+   public TableFormat():void {
         this.files1 = [];
         const images = ["https://www.diethelmtravel.com/wp-content/uploads/2016/04/bill-gates-wealthiest-person.jpg",
             "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
@@ -341,7 +336,8 @@ export class DashboardComponent implements OnInit {
         ];
         
     }
-    Table2Format() {
+    
+    public Table2Format():void {
         this.files2 = [];
         const images = ["https://www.diethelmtravel.com/wp-content/uploads/2016/04/bill-gates-wealthiest-person.jpg",
             "https://images.unsplash.com/photo-1495344517868-8ebaf0a2044a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80",
@@ -379,7 +375,7 @@ export class DashboardComponent implements OnInit {
             { field: 'price', header: 'Price' }
         ];
     }
-    Table3Format() {
+    public Table3Format() :void{
         this.files3 = [];
         const images = ["https://images.unsplash.com/photo-1495344517868-8ebaf0a2044a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80",
             "https://mirimstudent25.files.wordpress.com/2013/10/movietalk-despicableme630-jpg_002144.jpg",
@@ -416,13 +412,13 @@ export class DashboardComponent implements OnInit {
     }
 
 
-    RadarChart() {
+    public RadarChart():void {
         const documentStyle = getComputedStyle(document.documentElement);
         const textColor = documentStyle.getPropertyValue('--text-color');
         const textColorSecondary = documentStyle.getPropertyValue('--text-color-secondary');
 
         this.data3 = {
-            labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
+            labels: ['Monthly Sales', 'Yearly Sales', 'Weekly Sales', 'Day Sales', 'Goods', 'Electronics', 'Gadgets'],
             datasets: [
                 {
                     label: '  Sales Data',
@@ -446,6 +442,8 @@ export class DashboardComponent implements OnInit {
         };
 
         this.options3 = {
+            responsive: false,
+            maintainAspectRatio: false,
             plugins: {
                 legend: {
                     labels: {
@@ -466,13 +464,11 @@ export class DashboardComponent implements OnInit {
         };
     }
 
-    months(){
+   public  months():void{
         this.Years = [
             { name: 'Day', code: 'YEST' },
             { name: 'Month', code: 'TD' },
             { name: 'Year', code: 'TW' },
-            
-
         ];
    
     }
